@@ -1,13 +1,25 @@
+body{
+    font-family: "Courgette", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #0B0B0B;
+}
+
 header{
     background-color: #F6D4F5;
+
 }
 
 .topbar{
-
+    background-color: #0B0B0B;
+    color: #F6D4F5;
+    display: flex;
+    padding: 0.5em;
+    justify-content: center;
 }
 
 .container{
-
+    width: 75%;
 }
 
 #cart{
@@ -15,38 +27,36 @@ header{
 }
 
 .right{
-
+    float: right;
 }
 
 .clear{
-
+    clear: none
 }
 
 .left{
-
-}
-
-.fa{
-
-}
-
-.fa-shopping-cart{
-
+    float: left;
 }
 
 #slider{
-
-}
-
-h2{
-    background-color: #F6D4F5;
     opacity: 0.8;
     box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    position: absolute;
+}
+
+#slider>h2{
+    background-color: #F6D4F5;
+}
+
+#slider>img{
+    width: 70%;
 }
 
 #select{
-
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    /* solution qui opère une transition de type ease.D'une durée de 0.2 seconde qui diminue l'opacité à 0.5 dès lors que le curseur de l'utilisateur pointera sur cette section. */
 }
+
 .escarpin{
 
 }
@@ -56,41 +66,25 @@ h2{
 }
 
 #new{
-
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
 
 #best{
-
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
 
 #crush{
-
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
 
 #info{
 
 }
 
-.fa-lock{
-
-}
-
-.fa-truck{
-
-}
-
-.fa-money{
-
-}
-
-.fa-phone{
-
-}
-
-.fa-check-circle{
-
-}
-
 #bottombar{
+    
+}
+
+@media screen and (width <=640) {
     
 }
