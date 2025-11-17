@@ -3,11 +3,16 @@ body{
     font-weight: 400;
     font-style: normal;
     color: #0B0B0B;
+    background-color: #F2F2F2;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
 }
 
 header{
     background-color: #F6D4F5;
-
 }
 
 .topbar{
@@ -18,63 +23,162 @@ header{
     justify-content: center;
 }
 
+nav{
+    display: flex;
+    justify-content: space-between
+}
+
+nav a{
+    text-decoration: none;
+    flex: 1;
+    text-align: center;
+    color: #0B0B0B;
+    margin: 20px 0px;
+    transition-duration: 0.2s;
+}
+
+nav a:hover{
+    background-color: rgb(53,50,50);
+    color: white;
+    transition: all 0.1s ease 0s;
+}
+
 .container{
+    margin: 0 auto;
     width: 75%;
+    max-width: 1500px;
 }
 
 #cart{
+    margin: 20px 0px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 
+#cart p {
+    display: flex;
+    flex-direction: column;
+    text-align: end;
 }
 
 .right{
     float: right;
 }
 
-.clear{
-    clear: none
-}
-
 .left{
     float: left;
+}
+
+main{
+    margin:0 auto;
+    padding: 15px 0; 
 }
 
 #slider{
     opacity: 0.8;
     box-shadow: 0 0 5px rgba(0,0,0,0.1);
-    position: absolute;
+    background-color: white;
+    padding: 15px;
 }
 
 #slider>h2{
+    opacity: 0.8;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
     background-color: #F6D4F5;
+    position: absolute;    
+    margin: 0;
+    padding: 15px;
 }
 
-#slider>img{
-    width: 70%;
+#slider h2 span{
+    font-size: 70%;
+    font-weight: 400;
+}
+
+#slider img{
+    margin: 0 auto;
+    width: 100%;
 }
 
 #select{
     box-shadow: 0 0 5px rgba(0,0,0,0.1);
-    /* solution qui opère une transition de type ease.D'une durée de 0.2 seconde qui diminue l'opacité à 0.5 dès lors que le curseur de l'utilisateur pointera sur cette section. */
+    margin: 15px 0;
+    background-color: white;
+    padding: 15px
+}
+
+#escarpin{
+    display: flex;
+    justify-content: space-between;
+}
+
+.escarpin img{
+    width: 150px;
+    height: 150px;
 }
 
 .escarpin{
+    opacity: 0.5;
+    width: 100%;
+    text-align:center;
+    transition: all 0.2s ease 0s;
+}
 
+.escarpin:hover{
+    opacity: 1;
 }
 
 #news{
-
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 #new{
     box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+#new h2{
+    text-align: start;
+    padding: 5px;
+    background-color:#ea35bf;
+    color: white;
+    margin: 5px 0;
 }
 
 #best{
     box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+#best h2{
+    text-align: start;
+    padding: 5px;
+    background-color:#91BD42;
+    color: white;
+    margin: 5px 0;
 }
 
 #crush{
     box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+#crush h2{
+    text-align: start;
+    padding: 5px;
+    background-color:#0098B0;
+    color: white;
+    margin: 5px 0;
 }
 
 #info{
