@@ -72,7 +72,7 @@ nav a:hover{
 
 main{
     margin:0 auto;
-    padding: 15px 0; 
+    padding: 30px 0; 
 }
 
 #slider{
@@ -82,7 +82,7 @@ main{
     padding: 15px;
 }
 
-#slider>h2{
+#slider h2{
     opacity: 0.8;
     box-shadow: 0 0 5px rgba(0,0,0,0.1);
     background-color: #F6D4F5;
@@ -151,6 +151,11 @@ main{
     margin: 5px 0;
 }
 
+#new:hover{
+    scale: 1.2;
+    cursor: pointer;
+}
+
 #best{
     box-shadow: 0 0 5px rgba(0,0,0,0.1);
     background-color: white;
@@ -164,6 +169,11 @@ main{
     background-color:#91BD42;
     color: white;
     margin: 5px 0;
+}
+
+#best:hover{
+    scale: 1.2;
+    cursor: pointer;
 }
 
 #crush{
@@ -181,7 +191,128 @@ main{
     margin: 5px 0;
 }
 
+#crush:hover{
+    scale: 1.2;
+    cursor: pointer;
+}
 
-@media screen and (width <=640) {
-    
+footer{
+    box-sizing: border-box;
+    width: 100%
+}
+
+#info{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    background-color: #E3ADE1;
+    padding: 25px;
+}
+
+#info article{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    color: #0B0B0B;
+    transition: all 0.2s ease 0s;
+}
+
+#info article:hover{
+    color: white;
+    cursor: pointer;
+}
+
+#bottombar{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    background-color: #F6D4F5;
+}
+
+#bottombar article{
+    text-align: center;
+}
+
+ul li{
+    list-style-position: inside;
+    list-style: none;
+    position: relative;
+    left: -20px;
+    line-height: 35px;
+    color: #0B0B0B;
+}
+
+ul li:hover{
+    color: #ea35bf;
+    cursor: pointer;
+}
+
+@media screen and (max-width:640px) {
+
+    .container{
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    #cart{
+        display: none;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    nav a{
+        margin: 0;
+        padding: 15px;
+    }
+
+    #slider h2{
+    opacity: 1;
+    position: static;
+    margin: 0 0 15px 0;
+}
+
+    #escarpin{
+        margin-top: 15px;
+        flex-direction: column;
+    }
+
+    .escarpin{
+        padding: 15px 0;
+    }
+
+    #news{
+        flex-direction: column;
+    }
+
+    #new:hover{
+        scale: 1;
+    }
+
+    #best:hover{
+        scale: 1;
+    }
+
+    #crush:hover{
+        scale: 1;
+    }
+
+    #info{
+        flex-direction: column;
+    }
+
+    #info article{
+        padding: 15px 0;
+    }
+
+    #bottombar{
+        flex-direction: column;
+        padding: 15px 0;
+    }
+
 }
