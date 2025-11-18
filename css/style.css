@@ -35,6 +35,7 @@ nav a{
     color: #0B0B0B;
     margin: 20px 0px;
     transition-duration: 0.2s;
+    padding: 8px 0;
 }
 
 nav a:hover{
@@ -253,7 +254,7 @@ ul li:hover{
 
     .container{
         text-align: center;
-        padding: 20px 0;
+        padding: 10px 0;
     }
 
     #cart{
@@ -268,7 +269,7 @@ ul li:hover{
 
     nav a{
         margin: 0;
-        padding: 15px;
+        padding: 8px 0;
     }
 
     #slider h2{
